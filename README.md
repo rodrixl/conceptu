@@ -38,12 +38,21 @@ python3 -m venv env
 
 2) Baixar o codigo do repositorio
 
-git clone <url> lojavirtual
+git clone https://github.com/rodrixl/conceptu.git
+cd conceptu
+
+Instalar pacotes de dependencias
+
+pip install -r requeriments.txt
 
 3) Executar o servidor do django
 
-cd lojavirtual
 ./manage runserver 0.0.0.0:5000
+
+logar na aplicação (acesso é restrito a usuários logados, conforme especificação)
+usar usuario: admin e senha: senha123
+
+http://0.0.0.0:5000/api-auth/login/
 
 4) Acessar o API via urls (possui interface do DRF para tornar amigavel as coisas):
 
